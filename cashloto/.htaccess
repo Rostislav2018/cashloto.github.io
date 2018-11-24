@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^exit/? index.php?logout
+RewriteRule ^login/? index.php?mode=login
+RewriteRule ^purse/? index.php?mode=purse
+RewriteRule ^game/? index.php?mode=game
+RewriteRule ^rules/? index.php?mode=rules
+RewriteRule ^faq/? index.php?mode=faq
+RewriteRule ^refs/$ index.php?mode=refs
+RewriteRule ^contacts/? index.php?mode=contacts
+RewriteRule ^room_2/? index.php?mode=room_2
+RewriteRule ^room_3/? index.php?mode=room_3
+RewriteRule ^room_4/? index.php?mode=room_4
+RewriteRule ^room_5/? index.php?mode=room_5
+RewriteRule ^room_6/? index.php?mode=room_6
+
+RewriteRule ^refs/?p=([0-9]+)$ index.php?mode=refs&p=$1
+RewriteRule ^payout/? index.php?mode=payout
+RewriteRule ^deposit/? index.php?mode=deposit
+RewriteRule ^pay/([0-9]+)/? index.php?mode=pay&pay_id=$1
+RewriteRule ^success/? index.php?mode=success
+RewriteRule ^fail/? index.php?mode=fail
+RewriteRule ^bonus/? index.php?mode=bonus
